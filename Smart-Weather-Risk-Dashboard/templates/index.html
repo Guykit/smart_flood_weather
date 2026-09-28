@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Flood Risk Dashboard</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+    
+   
+   
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <h1>Flood Risk Dashboard</h1>
+
+        <p class="subtitle">
+            ระบบประเมินความเสี่ยงน้ำท่วมจากข้อมูลสภาพอากาศ
+        </p>
+
+
+        <!-- เลือกจังหวัด -->
+
+        <div class="card">
+
+            <h2>เลือกจังหวัด</h2>
+
+            <select id="provinceSelect">
+
+                <option value="">-- เลือกจังหวัด --</option>
+
+            </select>
+
+        </div>
+
+        <!-- เลือกวันที่ -->
+        <div class = "card">  
+
+            <h2>เลือกวันที่</h2>
+
+            <select id="dateSelect" >
+
+                <option value="">--เลือกวันที่--</option>
+                
+            </select>
+
+
+        </div>
+
+
+        <!-- Flood Risk -->
+
+        <div class="card risk-card">
+
+            <h2>Flood Risk</h2>
+
+            <div id="riskLevel" class="risk-level">
+                -
+            </div>
+
+            <p>
+                ความน่าจะเป็นน้ำท่วม
+            </p>
+
+            <div id="floodPercent" class="percentage">
+                
+            </div>
+
+            <p id="riskDate">
+                วันที่: -
+            </p>
+
+        </div>
+
+
+        <!-- Weather -->
+
+        <div class="weather">
+
+            <div class="card">
+
+                <h2>Temperature</h2>
+
+                <div class="value">
+
+                    <span id="temperature">
+                        -
+                    </span>
+
+    
+
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <h2>Humidity</h2>
+
+                <div class="value">
+
+                    <span id="humidity">
+                        -
+                    </span>
+
+                    %
+
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <h2>Rainfall</h2>
+
+                <div class="value">
+
+                    <span id="rainfall">
+                        -
+                    </span>
+
+                    mm
+
+                </div>
+
+            </div>
+            <div class="card">
+
+                <h2>rainfall_3d</h2>
+
+                <div class="value">
+
+                    <span id="rainfall_3d">
+                        -
+                    </span>
+                    mm
+                </div>
+            </div>
+            <div class="card">
+
+                <h2>rainfall_7d</h2>
+
+                <div class="value">
+
+                    <span id="rainfall_7d">
+                        -
+                    </span>
+                    mm
+                </div>
+            </div>
+                        <div class="card">
+
+                <h2>windspeed</h2>
+
+                <div class="value">
+
+                    <span id="windspeed">
+                        -
+                    </span>
+                    
+                </div>
+            </div>
+
+
+            
+         </div>
+                 <div class="card">
+
+            <h2>Top 4 จังหวัดเสี่ยงน้ำท่วม</h2>
+
+            <div id="top4List">
+
+                <p>1. -</p>
+                <p>2. -</p>
+                <p>3. -</p>
+                <p>4. -</p>
+                <p>5. -</p>
+
+            </div>
+
+
+
+
+
+    </div>
+
+
+    
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+/* กำหนดฟอนต์และขนาดให้ทุก element */
+*{
+    font-family:Tahoma;
+    box-sizing:border-box;
+}
+
+/* กำหนดรูปแบบพื้นฐานของหน้าเว็บ */
+body{
+    margin:0;
+    background-color:white;
+}
+
+/* กำหนดพื้นที่หลักของ Dashboard */
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:0 auto;
+    padding:20px 0;
+}
+
+/* หัวข้อหลัก */
+h1{
+    color:navy;
+    text-align:center;
+    margin-bottom:5px;
+}
+
+/* ข้อความตรงใต้หัวข้อ */
+.subtitle{
+    color:gray;
+    text-align:center;
+    margin-bottom:25px;
+}
+
+/* การ์ดเวทอร์ */
+.card{
+    background-color:white;
+    border:1px solid lightgray;
+    border-radius:8px;
+    padding:18px;
+    margin-bottom:16px;
+}
+
+
+.card h2{
+    color:gray;
+    font-size:18px;
+    margin-top:0;
+    margin-bottom:12px;
+}
+
+
+
+/* ช่องเลือกจังหวัดกับวันที่ */
+select{
+    width:100%;
+    padding:10px;
+    border:1px solid gray;
+    border-radius:5px;
+    background-color:white;
+}
+
+/* การ์ดแสดงความเสี่ยง */
+.risk-card{
+    text-align:center;
+    background-color:powderblue;
+}
+
+/* ระดับความเสี่ยง */
+.risk-level{
+    font-size:32px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+/* เปอเซนความเสี่ยง */
+.percentage{
+    font-size:38px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+/* วันที่ทำนาย */
+#riskDate{
+    font-size:14px;
+    color:black;
+    margin-top:10px;
+}
+
+/* จัดข้อมูลสภาพอากาศเป็นตาราง */
+.weather{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+}
+
+/* กล่องข้อมูลสภาพอากาศ */
+.weather .card{
+    margin-bottom:0;
+}
+
+/* ค่าของข้อมูลเวเทอร */
+.value{
+    font-size:24px;
+    font-weight:bold;
+    color:darkblue;
+}
+
+/* การ์ด Top 5*/
+#top4List p{
+    margin:8px 0;
+}
+
